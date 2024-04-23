@@ -1,0 +1,88 @@
+<mxfile host="app.diagrams.net" modified="2024-04-23T13:24:11.371Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.2 Safari/605.1.15" etag="BYNnAVIktLwqya3pyNp1" version="24.2.5" type="device">
+  <diagram name="Page-1" id="X3yYcv1iftkCJwVImBNm">
+    <mxGraphModel dx="766" dy="639" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2336" pageHeight="1654" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="_2sq-AuTwj2sfxO2wzql-15" value="" style="rounded=1;whiteSpace=wrap;html=1;arcSize=2;" vertex="1" parent="1">
+          <mxGeometry x="400" y="170" width="540" height="370" as="geometry" />
+        </mxCell>
+        <mxCell id="_2sq-AuTwj2sfxO2wzql-1" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeColor=#000000;fillColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="500" y="200" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_2sq-AuTwj2sfxO2wzql-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="_2sq-AuTwj2sfxO2wzql-6" target="_2sq-AuTwj2sfxO2wzql-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_2sq-AuTwj2sfxO2wzql-6" value="Receive room number" style="html=1;shape=mxgraph.sysml.accEvent;strokeWidth=1;whiteSpace=wrap;align=center;" vertex="1" parent="1">
+          <mxGeometry x="429.37" y="280" width="171.25" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_2sq-AuTwj2sfxO2wzql-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="_2sq-AuTwj2sfxO2wzql-1" target="_2sq-AuTwj2sfxO2wzql-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_2sq-AuTwj2sfxO2wzql-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="_2sq-AuTwj2sfxO2wzql-8" target="_2sq-AuTwj2sfxO2wzql-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_2sq-AuTwj2sfxO2wzql-8" value="Plan navigation" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="455" y="400" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_2sq-AuTwj2sfxO2wzql-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="_2sq-AuTwj2sfxO2wzql-10" target="_2sq-AuTwj2sfxO2wzql-22">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="880" y="480" />
+              <mxPoint x="880" y="310" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_2sq-AuTwj2sfxO2wzql-30" value="Reached Room" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="_2sq-AuTwj2sfxO2wzql-29">
+          <mxGeometry x="0.1409" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_2sq-AuTwj2sfxO2wzql-10" value="Move along planned path" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="650" y="450" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_2sq-AuTwj2sfxO2wzql-16" value="Stm2: Moving to room" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="380" y="160" width="180" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="_2sq-AuTwj2sfxO2wzql-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="_2sq-AuTwj2sfxO2wzql-17" target="_2sq-AuTwj2sfxO2wzql-8">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="725" y="390" />
+              <mxPoint x="620" y="390" />
+              <mxPoint x="620" y="430" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_2sq-AuTwj2sfxO2wzql-17" value="Obstacle detected" style="shape=mxgraph.sysml.flowFinal;labelPosition=right;verticalLabelPosition=top;spacingTop=5;spacingLeft=3;align=left;verticalAlign=top;resizable=0;html=1;direction=south;" vertex="1" parent="1">
+          <mxGeometry x="715" y="440" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="_2sq-AuTwj2sfxO2wzql-28" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="_2sq-AuTwj2sfxO2wzql-22" target="_2sq-AuTwj2sfxO2wzql-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_2sq-AuTwj2sfxO2wzql-22" value="Detecting room number" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="680" y="280" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_2sq-AuTwj2sfxO2wzql-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="_2sq-AuTwj2sfxO2wzql-23" target="_2sq-AuTwj2sfxO2wzql-8">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="640" y="310" />
+              <mxPoint x="640" y="360" />
+              <mxPoint x="575" y="360" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_2sq-AuTwj2sfxO2wzql-25" value="Wrong" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="_2sq-AuTwj2sfxO2wzql-24">
+          <mxGeometry x="0.1475" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_2sq-AuTwj2sfxO2wzql-23" value="" style="shape=mxgraph.sysml.flowFinal;labelPosition=right;verticalLabelPosition=top;spacingTop=5;spacingLeft=3;align=left;verticalAlign=top;resizable=0;html=1;direction=south;" vertex="1" parent="1">
+          <mxGeometry x="670" y="300" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="_2sq-AuTwj2sfxO2wzql-26" value="" style="shape=mxgraph.sysml.x;" vertex="1" parent="1">
+          <mxGeometry x="735" y="190" width="40" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
