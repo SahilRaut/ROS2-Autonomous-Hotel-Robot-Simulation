@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<robot name="simple_robot" xmlns:xacro="http://ros.org/wiki/xacro" >
+
+  <xacro:property name="body_colour" value="0.2 0.2 0.3 1" />
+
+  <!-- Body size -->
+  <xacro:property name="body_x" value="0.5" />
+  <xacro:property name="body_y" value="0.5" />
+  <xacro:property name="body_z" value="0.4" />
+
+  <xacro:property name="sensor_x" value="0.1" />
+  <xacro:property name="sensor_y" value="0.1" />
+  <xacro:property name="sensor_z" value="0.1" />
+
+  <xacro:property name="camera_offset_x" value="${body_x/2 - sensor_x/2}" />
+  <xacro:property name="camera_offset_y" value="${body_y/2 - sensor_y/2}" />
+  <xacro:property name="camera_offset_z" value="${body_z + sensor_z/2}" />
+
+  <xacro:property name="scanner_offset_x" value="${body_x/2}" />
+  <xacro:property name="scanner_offset_y" value="0.0" />
+  <xacro:property name="scanner_offset_z" value="${sensor_z/2}" />
+
+  <link name="base_link">
+    <visual>
+      <geometry>
+        <box size="${body_x} ${body_y} ${body_z}"/>
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 ${body_z/2}"/>
+      <material name="blue">
+        <color rgba="0.5 0.5 1 0.8" />
+      </material>
+    </visual>
+  </link>
+
+  <link name="camera_link">
+    <visual>
+      <geometry>
+        <box size="${sensor_x} ${sensor_y} ${sensor_z}"/>
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <material name="grey">
+        <color rgba="0.8 0.8 0.8 0.8" />
+      </material>
+    </visual>
+  </link>
+
+  <joint name="base_to_camera" type="fixed">
+    <parent link="base_link"/>
+    <child link="camera_link"/>
+    <origin rpy="${-pi/2} 0 ${-pi/2}" xyz="${camera_offset_x} ${camera_offset_y} ${camera_offset_z}" />
+  </joint>
+
+  <link name="base_scan">
+    <visual>
+      <geometry>
+        <box size="${sensor_x} ${sensor_y} ${sensor_z}"/>
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <material name="grey">
+        <color rgba="0.8 0.8 0.8 0.8" />
+      </material>
+    </visual>
+  </link>
+
+  <joint name="base_to_scanner" type="fixed">
+    <parent link="base_link"/>
+    <child link="base_scan"/>
+    <origin rpy="0 0 0" xyz="${scanner_offset_x} ${scanner_offset_y} ${scanner_offset_z}" />
+  </joint>
+
+</robot>
