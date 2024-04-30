@@ -1,0 +1,10 @@
+<library path="libop_panel">
+  <class name="op_panel/OperatorPanel"
+         type="op_panel::OperatorPanel"
+         base_class_type="rviz_common::Panel">
+      <description>
+        A simple operator panel plugin for RVIZ2.
+      </description>
+  </class>
+
+</library>

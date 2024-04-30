@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<?xml-model
+    href="http://download.ros.org/schema/package_format3.xsd"
+    schematypens="http://www.w3.org/2001/XMLSchema"?>
+  <package format="3">
+    <name>op_panel</name>
+    <version>0.0.0</version>
+    <description>Simple, custom panel plugin for RVIZ2</description>
+
+  <!-- One maintainer tag required, multiple allowed, one person per tag --> 
+  <!-- Example:  -->
+  <!-- <maintainer email="jane.doe@example.com">Jane Doe</maintainer> -->
+  <maintainer email="user@todo.todo">user</maintainer>
+
+  <!-- One license tag required, multiple allowed, one license per tag -->
+  <!-- Commonly used license strings: -->
+  <!--   BSD, MIT, Boost Software License, GPLv2, GPLv3, LGPLv2.1, LGPLv3 -->
+  <license>TODO</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <build_depend>qtbase5-dev</build_depend>
+  <build_depend>qt5-qmake</build_depend>
+
+  <exec_depend>libqt5-core</exec_depend>
+  
+  <depend>rclcpp</depend>
+  <depend>rviz_common</depend>
+  <depend>libqt5-widgets</depend>
+  <depend>rviz2</depend>
+  <depend>geometry_msgs</depend>
+  <depend>std_msgs</depend>
+
+  <test_depend>ament_cmake_pytest</test_depend>
+  <test_depend>launch_testing_ament_cmake</test_depend>
+  <test_depend>launch_testing_ros</test_depend>
+
+  <export>
+    <rviz plugin="plugin_description.xml"/>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
